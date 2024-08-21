@@ -13,8 +13,6 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-indigo-800 text-center">About PathForge</h1>
-
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-6 text-indigo-700">Our Mission</h2>
           <p className="text-lg mb-4">
