@@ -12,9 +12,9 @@ const LandingPage = () => {
         </div>
         <nav>
           <ul className="flex space-x-4 sm:space-x-6">
-            <li><a href="#" className="hover:text-indigo-600">Home</a></li>
-            <li><a href="#" className="hover:text-indigo-600">Products</a></li>
-            <li><a href="#" className="hover:text-indigo-600">About Us</a></li>
+            <li><a href="/" className="hover:text-indigo-600">Home</a></li>
+            <li><a href="/products" className="hover:text-indigo-600">Products</a></li>
+            <li><a href="/about" className="hover:text-indigo-600">About Us</a></li>
           </ul>
         </nav>
       </header>
@@ -80,9 +80,9 @@ const LandingPage = () => {
             </div>
             <nav>
               <ul className="flex flex-wrap justify-center md:justify-end space-x-4">
-                <li><a href="#" className="hover:text-indigo-200 transition duration-300">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-indigo-200 transition duration-300">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
+                <li><a href="/privacy" className="hover:text-indigo-200 transition duration-300">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-indigo-200 transition duration-300">Terms of Service</a></li>
+                <li><a href="/contact" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
               </ul>
             </nav>
           </div>
