@@ -97,7 +97,7 @@ const App = () => {
                 <ul className="flex flex-wrap justify-center md:justify-end space-x-4">
                   <li><a href="/privacy" className="hover:text-indigo-200 transition duration-300">Privacy Policy</a></li>
                   <li><a href="/terms" className="hover:text-indigo-200 transition duration-300">Terms of Service</a></li>
-                  <li><a href="/contact" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
+                  <li><a href="mailto:vijay@pathforge.ai" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
                 </ul>
               </nav>
             </div>
