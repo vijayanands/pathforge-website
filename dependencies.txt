@@ -1,0 +1,7 @@
+npx create-react-app pathforge-website
+cd pathforge-website
+npm install tailwindcss@latest postcss@latest autoprefixer@latest lucide-react
+npx tailwindcss init -p
+emacs tailwind.config.js
+emacs src/index.js
+npm install gh-pages --save-dev
