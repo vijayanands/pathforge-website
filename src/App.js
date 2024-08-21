@@ -14,11 +14,6 @@ const LandingPage = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-center lg:text-left">
               Empowering Employee Performance, Career, Skills and Learning through AI
             </h1>
-            <div className="text-center lg:text-left">
-              <button className="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100 transition duration-300">
-                Get Started
-              </button>
-            </div>
           </div>
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <div className="bg-white p-5 rounded-lg shadow-lg h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 flex items-center justify-center">
