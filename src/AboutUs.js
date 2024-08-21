@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
+import profileImage from './vijay_profile.jpg'
 
 const AboutUs = () => {
   const [email, setEmail] = React.useState('');
@@ -26,7 +27,7 @@ const AboutUs = () => {
           <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
             <div className="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
               <img
-                src="/path/to/vijay-profile-picture.jpg"
+                src={profileImage}
                 alt="Vijay Sankarasubramanian"
                 className="w-full h-auto rounded-lg mb-4"
               />
