@@ -1,24 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import logoImage from './pathforge-logo-final.png';
 import bannerImage from './pathforge_concept_image.jpg';
+import AboutUs from './AboutUs';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
-      <header className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
-        <div className="flex items-center mb-4 sm:mb-0">
-          <img src={logoImage} alt="PathForge Logo" className="h-8" />
-        </div>
-        <nav>
-          <ul className="flex space-x-4 sm:space-x-6">
-            <li><a href="/" className="hover:text-indigo-600">Home</a></li>
-            <li><a href="/products" className="hover:text-indigo-600">Products</a></li>
-            <li><a href="/about" className="hover:text-indigo-600">About Us</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <>
       <section className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 py-10 text-white">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-2/3 pr-0 lg:pr-8 mb-8 lg:mb-0">
@@ -70,25 +59,52 @@ const LandingPage = () => {
           </div>
         </section>
       </main>
+    </>
+  );
+};
 
-      <footer className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0 text-center md:text-left">
-              <img src={logoImage} alt="PathForge Logo" className="h-8 mb-2 mx-auto md:mx-0" />
-              <p>&copy; 2024 PathForge. All rights reserved.</p>
-            </div>
-            <nav>
-              <ul className="flex flex-wrap justify-center md:justify-end space-x-4">
-                <li><a href="/privacy" className="hover:text-indigo-200 transition duration-300">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-indigo-200 transition duration-300">Terms of Service</a></li>
-                <li><a href="/contact" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
-              </ul>
-            </nav>
+const App = () => {
+  return (
+    <Router>
+      <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+        <header className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
+          <div className="flex items-center mb-4 sm:mb-0">
+            <img src={logoImage} alt="PathForge Logo" className="h-8" />
           </div>
-        </div>
-      </footer>
-    </div>
+          <nav>
+            <ul className="flex space-x-4 sm:space-x-6">
+              <li><Link to="/" className="hover:text-indigo-600">Home</Link></li>
+              <li><Link to="/products" className="hover:text-indigo-600">Products</Link></li>
+              <li><Link to="/about" className="hover:text-indigo-600">About Us</Link></li>
+            </ul>
+          </nav>
+        </header>
+
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/about" component={AboutUs} />
+          {/* Add more routes as needed */}
+        </Switch>
+
+        <footer className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-8">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="mb-4 md:mb-0 text-center md:text-left">
+                <img src={logoImage} alt="PathForge Logo" className="h-8 mb-2 mx-auto md:mx-0" />
+                <p>&copy; 2024 PathForge. All rights reserved.</p>
+              </div>
+              <nav>
+                <ul className="flex flex-wrap justify-center md:justify-end space-x-4">
+                  <li><a href="/privacy" className="hover:text-indigo-200 transition duration-300">Privacy Policy</a></li>
+                  <li><a href="/terms" className="hover:text-indigo-200 transition duration-300">Terms of Service</a></li>
+                  <li><a href="/contact" className="hover:text-indigo-200 transition duration-300">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </Router>
   );
 };
 
@@ -111,4 +127,4 @@ const getStepDescription = (step) => {
   }
 };
 
-export default LandingPage;
+export default App;
