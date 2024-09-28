@@ -1,0 +1,62 @@
+This is a demo of pathforge empower
+
+A Talent Copilot for Employees to manage their productivity, performance, career, learning and skills based on the corpus of work that they have done within the enterprise.
+
+The landing page consists of two tabs, one for login and other for sign up. There are three categories of users, namely, an individual contributor, a people manager and an enterprise admin.
+
+
+Now let us login as an enterprise admin and see what options he or she can do.
+
+
+The dashboard for enterprise admin lets him or her to configure various meta data that is required by the application to do its job. In this demo, that would be setting the various employment ladders,  its levels and the eligibility criteria for an employee to get to a level.
+
+
+Let us now logout and login as an individual contributor.
+
+
+As an individual contributor the user is provided with a conversational AI interface where he or she can perform a set of predefined actions, or they have an option to enter a custom question.
+
+e.g. I can ask the question "What are the Jira issues that I have resolved. Give me the links for those", and the tool comes back with an answer.
+
+
+Now let us dive in into some of the predefined prompts defined for the user.
+
+
+Prompt: "Generate a self appraisal for me": 
+This action creates a starting point for generating self appraisal of employees based on the work they have done during a specific time period. For this demo, the tool will use the employees contributions in jira, confluence and gitlab to generate a nicely formatted self appraisal report in various formats, namely, JSON, pdf and html.
+
+
+Prompt: Show me the endorsements I have: 
+This action is used to manage endorsements for the employee. Optionally it will pull the endorsements from the users linkedin profile or other social media platforms and display it.
+
+
+Prompt: I would like to manage my skills:
+In this screen, the user's skill information is imported from his or her linkedin profile and potentially from their resume. The user has the option of adding a skill, removing a skill or editing the proficiency associated with a skill. Additionally he or she is able to also get a recommended list of actions to improve on the skill.
+
+
+Prompt: Show me my current career trajectory information:
+This action is used to show where I currently stand in my career ladder. The button that says "what are my gaps", is used to identify gaps in my skills with respect to what is needed for the next level. This takes into account the corpus of work associated with the employee, his or her skills, any feedback available from the employee's manager, the criteria for the next level, and any other contextual information to provide a summary of gaps.
+
+
+Prompt: I would like to manage my learning opportunities:
+In this screen the user has the option to get recommendation of learning opportunities. This will be based on a list of skills that he can select from his current skill list, and optionally, any other domain or area which can be specified as a keyword. The tool would then provide learning recommendations for that context. The recommendations would be in the form of courses offered within the enterprise, courses from learning sites outside of the enterprise, conferences that he or she could go to, and potential meetup opportunities.
+
+
+Prompt: I would like to get a picture of my productivity:
+This is a functionality that would provide the user with a productivity analytics dashboard for him or her. This dashboard provides a picture of his or her current productivity. This functionality is meant to provide inputs that would help the user improve on his or her productivity.
+
+That ends the list of predefined prompts currently defined in this demo.
+
+Now I would like to logout and login as a people manager.
+
+The people manager has one additional prompt compared with individual contributors. The prompt is "show me productivity stats for my employees". This option will give a list of the manager's reports and allow him or her to select an reportee and visualize the productivity analytics dashboard for that employee.
+
+That ends the features that I intended to show as a part of this demo.
+
+All of features shown in the demo is based on connections to other enterprise tools and datasets that is present within the enterprise. Some examples are JIRA, confluence, github or any other revision control system, slack or zoom, email clients like outlook, internal blog sites, project catalogs, Enterprise Resource Planning systems like workday etc. 
+
+
+We use the data from these systems to glean context and information about the currently logged in user. Using the help of this data the system can also help in modeling other use cases like weekly status reports, internal job search, talent management, mentoring etc.
+
+
+Thanks for watching the demo
